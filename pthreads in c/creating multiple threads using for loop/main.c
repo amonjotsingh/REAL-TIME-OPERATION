@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : structures.c
+ Name        : pthread.c
  Author      : Amonjot
  Version     :
  Copyright   : Your copyright notice
@@ -37,6 +37,7 @@ int main(void) {
         pthread_create(&thread2, NULL, func1, NULL);
         pthread_join(thread1,NULL);
         pthread_join(thread2,NULL);
-    } 
+    }
+    pthread_exit(NULL);
     return EXIT_SUCCESS;
 }
